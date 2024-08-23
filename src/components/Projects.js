@@ -130,7 +130,7 @@ export const Projects = () => {
                 </Col>
 
                 <Col xs={12} md={6} className='px-4 flex-column text-center text-md-start'>
-                  <h1 className="d-none d-md-block">Scuffoogle</h1>
+                  <h1 className="d-md-none d-sm-block text-center">Scuffoogle</h1>
                   <p>This project won University of Melbourne's local hackathon held by the Computing and Information Systems Student Association for being the most annoying program. It is a search engine that insults the user based on their query.</p>
                   <div className='techsUsed d-flex flex-wrap justify-content-center justify-content-md-start'>
                     <TechCard techName="Python" />
@@ -149,6 +149,7 @@ export const Projects = () => {
              
             <Carousel.Item className='px-5'>
               <Row className='d-flex justify-content-center align-items-center mb-5'>
+
                 <Col xs={12} md={6} className='px-5'>
                   <Row className='d-flex justify-content-center align-items-center flex-column px-3'>
                     <h1 className="d-md-none d-sm-block text-center">Email Sender</h1>
