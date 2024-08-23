@@ -1,0 +1,678 @@
+/* ALL */
+* {
+  margin : 0;
+  padding : 0;
+  box-sizing : border-box;
+}
+
+.particles-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+body {
+  overflow-x : hidden;
+  position : relative;
+  background-color: #121212 !important; 
+  color : #fff !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin : 0;
+  padding : 0;
+  line-height: normal;
+}
+
+/* ANIMATIONS */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.slide-in-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.slide-in-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
+
+/************ Navbar Css ************/
+nav.navbar {
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  transition: background-color 0.32s ease-in-out;
+}
+
+nav.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav.navbar .navbar-brand .logo-text {
+  font-size: 35px;
+  color: #fff;
+  font-weight: bold;
+}
+
+nav.navbar .navbar-nav .nav-link.navbar-link {
+  font-weight: 400;
+  color: #fff !important;
+  letter-spacing: 0.8px;
+  padding: 10px 25px; /* Padding for spacing between items */
+  font-size: 18px; /* Regular size for larger screens */
+  opacity: 0.75;
+  text-align: left;
+}
+
+nav.navbar .navbar-nav .nav-link.navbar-link:hover,
+nav.navbar .navbar-nav .nav-link.navbar-link.active {
+  opacity: 1;
+}
+
+nav.navbar .navbar-toggler:active,
+nav.navbar .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+nav.navbar .navbar-toggler-icon {
+  width: 24px;
+  height: 17px;
+  background-image: none;
+  position: relative;
+  border-bottom: 2px solid #fff;
+  transition: all 300ms linear;
+  top: -2px;
+}
+
+nav.navbar .navbar-toggler-icon:focus {
+  border-bottom: 2px solid #fff;
+}
+
+nav.navbar .navbar-toggler-icon:after,
+nav.navbar .navbar-toggler-icon:before {
+  width: 24px;
+  position: absolute;
+  height: 2px;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  content: "";
+  z-index: 2;
+  transition: all 300ms linear;
+}
+
+nav.navbar .navbar-toggler-icon:after {
+  top: 8px;
+}
+
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+  transform: rotate(45deg);
+  background-color: #fff;
+  height: 2px;
+}
+
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+  transform: translateY(8px) rotate(-45deg);
+  background-color: #fff;
+  height: 2px;
+}
+
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  border-color: transparent;
+}
+
+.fullscreen-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 10000;
+  opacity: 0;
+  transform: translateY(-20px); /* Start slightly above */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth opacity and transform transitions */
+  display: flex;
+  justify-content: center; /* Center content vertically */
+  align-items: flex-start; /* Align content at the top */
+  padding-top: 30px; /* Padding at the top for the close button */
+}
+
+.fullscreen-navbar.show {
+  opacity: 1;
+  transform: translateY(0); /* Move to the correct position */
+}
+
+.fullscreen-navbar .navbar-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center links vertically */
+  align-items: flex-start; /* Align links to the left */
+  width: 100%; /* Make navbar take full width */
+  padding-left: 30px; /* Add left padding to align content */
+}
+
+.fullscreen-navbar .navbar-nav .nav-link {
+  font-size: 36px; /* Adjust font size as needed */
+  padding: 15px 0;
+  color: #fff !important;
+  text-align: left; /* Align text to the left */
+  width: 100%; /* Ensure links take up full width */
+}
+
+.fullscreen-navbar .close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10001;
+}
+
+
+
+@media (max-width: 768px) {
+  #basic-navbar-nav {
+    /* Example styles */
+    opacity: 0; /* Smooth transition for any changes */
+  }
+  
+  nav.navbar .navbar-brand .logo-text {
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+  }
+  .fullscreen-navbar .navbar-nav .nav-link {
+    font-size: 20px !important; /* Larger font size for small screens */
+    padding: 20px 25px !important; /* Adjust padding for spacing */
+  }
+}
+
+
+
+/************ Banner Css ************/
+.banner {
+  margin-top: 0;
+  padding: 27vh 0 10vh 0;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+.banner .tagline {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.banner h1 {
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.wrap {
+  border-right: 0.08em solid transparent;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: #666;
+  }
+  100% {
+    border-right-color: transparent;
+  }
+}
+
+.banner p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
+}
+
+.banner button:hover svg {
+  margin-left: 25px;
+}
+
+.banner .profilepicture {
+  margin-left: 5%;
+  margin-top: 0;
+  width: 75%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+
+}
+
+
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .banner {
+    padding: 80px 0; /* Adjusted padding for smaller screens */
+  }
+
+  .banner h1 {
+    font-size: 40px; /* Adjusted font size for smaller screens */
+  }
+
+  .banner p {
+    font-size: 16px; /* Adjusted font size for smaller screens */
+  }
+
+  .banner .profilepicture {
+    width: 80%; /* Make profile picture full width on smaller screens */
+    margin-left: 0;
+  }
+}
+
+
+.social-icon {
+  display: inline-block;
+}
+.social-icon a {
+  width: 42px;
+  height: 42px;
+  background: rgba(217, 217, 217, 0.1);
+  display: inline-flex;
+  border-radius: 50%;
+  margin-right: 6px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.social-icon a::before {
+  content: "";
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.3s ease-in-out;
+}
+.social-icon a:hover::before {
+  transform: scale(1);
+}
+.social-icon a img {
+width: 40%;
+z-index: 1;
+transition: 0.3s ease-in-out;
+}
+.social-icon a:hover img {
+filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+
+
+/***************************** Skills ****************************************/
+
+.skills {
+  padding: 80px 0;
+  position: relative;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.skills h2 {
+	font-size: 45px;
+	font-weight: 700;
+  text-align: center;
+}
+.skills p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+}
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+
+.skills .carousel-container {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease-in;
+}
+
+.fade-out {
+  opacity: 0;
+}
+.carousel-container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skillCard {
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.skillCard img {
+  max-width: 100%;
+  max-height: 100px; /* Set a fixed height for all images */
+  object-fit: contain; /* Maintain aspect ratio */
+  margin-bottom: 10px;
+}
+.modal-body {
+  background-color: #1e1e1e; /* Dark background color */
+  color: white; /* White text color */
+  border: none;
+  
+}
+
+.modal-header, .modal-foot {
+  border: none; /* Remove border */
+  background-color: #2a2a2a; /* Slightly different dark shade for header and footer */
+}
+
+.modal-header .close {
+  color: white; /* Close button color */
+}
+
+.skillCard img {
+  width: 100%;
+  height: auto;
+}
+
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px; /* Add equal padding to ensure equal gaps */
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 1;
+}
+
+.carousel-fade-left,
+.carousel-fade-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.carousel-fade-left {
+  left: 0;
+  background: linear-gradient(to right, #121212, rgba(18, 18, 18, 0));
+}
+
+.carousel-fade-right {
+  right: 0;
+  background: linear-gradient(to left, #121212, rgba(18, 18, 18, 0));
+}
+
+
+
+
+
+/*************************** Projects *****************************/
+.projects {
+  padding: 60px 0;
+  position: relative;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.projects h2 {
+	font-size: 45px;
+	font-weight: 700;
+  text-align: center;
+}
+.projects h3 {
+	font-size: 35px;
+	font-weight: 600;
+  text-align: center;
+}
+
+.projects h1 {
+	font-size: 30px;
+
+  text-align: center;
+}
+
+.projects p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  /* text-align: center; */
+}
+
+.projectImgHorizontal {
+  max-width: 75vh;
+  height: auto;
+}
+
+
+.forumgif {
+  width: auto;
+  height: 50vh;
+}
+
+.projectImgVertical {
+  max-height: 60vh; /* Limit the height to 30% of the viewport */
+  width: auto; /* Maintain the aspect ratio */
+  object-fit: contain;
+}
+
+.archivedProjectImgHorizontal {
+  max-width: 90%;
+  height: auto;
+}
+.archivedProjectImgVertical {
+  max-height: 40vh; /* Limit the height to 30% of the viewport */
+  width: auto; /* Maintain the aspect ratio */
+  object-fit: contain;
+}
+
+
+
+
+.techCard {
+  background-color: #1f1f1f; /* A slightly lighter dark color */
+  border: 1px solid #343a40;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.8vh;
+  margin-right: 1vh;
+  width: 90px; /* Adjusted width for better readability */
+  height: 5vh; /* Fixed height */
+  color: #f8f9fa;
+}
+
+.techName {
+  font-size: 0.98rem !important;
+}
+
+.techsUsed {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+
+@keyframes borderGlow {
+  0% {
+    border-color: #ffffff;
+    box-shadow: 0 0 2px #ffffff, 0 0 4px #ffffff, 0 0 6px #ffffff, 0 0 8px #ffffff;
+  }
+  50% {
+    border-color: #d3d3d3;
+    box-shadow: 0 0 2px #d3d3d3, 0 0 4px #d3d3d3, 0 0 6px #d3d3d3, 0 0 8px #d3d3d3;
+  }
+  100% {
+    border-color: #ffffff;
+    box-shadow: 0 0 2px #ffffff, 0 0 4px #ffffff, 0 0 6px #ffffff, 0 0 8px #ffffff;
+  }
+}
+
+.shiny-button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  background-color: #1f1f1f;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  overflow: hidden;
+  animation: borderGlow 2s infinite;
+  transition: color 0.4s;
+  margin-top: 20px;
+}
+
+.shiny-button:before {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  background: white;
+  border-radius: 10px;
+  z-index: -1;
+  filter: blur(4px);
+  opacity: 0.7;
+  animation: pulse 2s infinite;
+}
+
+.shiny-button:hover {
+  color: #d3d3d3;
+}
+
+.custom-order-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-order-1 {
+  order: 1;
+}
+
+.custom-order-2 {
+  order: 2;
+}
+
+.custom-order-3 {
+  order: 3;
+}
+
+@media (max-width: 767px) {
+  .projectImgHorizontal {
+    max-width: 60vh;
+  }
+
+  .archivedProjectImgHorizontal {
+    width:100vh;
+  }
+  .projectImgVertical, .archivedProjectImgVertical {
+    max-height: 40vh;;
+
+  }
+
+  .projects p {
+    font-size: 16px; /* Smaller font size for paragraphs */
+  }
+
+
+
+  .techName {
+    font-size: 0.9rem !important;
+  }
+}
+
+
+
+
+
+
+/*******************************CONTACT********************************/
+.contact {
+  position: relative;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contact h2 {
+	font-size: 45px;
+	font-weight: 700;
+  text-align: center;
+}
+
+.contact p {
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+}
