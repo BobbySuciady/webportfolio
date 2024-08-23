@@ -208,14 +208,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   cursor: pointer;
   z-index: 10001;
 }
+#basic-navbar-nav {
+  display: block; /* Ensure it is displayed by default */
+}
 
 
 
 @media (max-width: 768px) {
   #basic-navbar-nav {
     /* Example styles */
-    opacity: 0; /* Smooth transition for any changes */
+    display: none; /* Smooth transition for any changes */
   }
+  
   
   nav.navbar .navbar-brand .logo-text {
     font-size: 20px;

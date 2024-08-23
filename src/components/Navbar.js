@@ -39,7 +39,7 @@ export const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={toggleFullscreenMenu}>
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
-
+        
         {/* Standard Navbar Collapse */}
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
