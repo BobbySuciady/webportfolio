@@ -50,40 +50,40 @@ export const Projects = () => {
                     <TechCard techName="HTML/CSS" />
                     <TechCard techName="SQLite" />
                   </div>
-                  <ShinyButton link="https://github.com/your-username/tara" text="View on GitHub" />
+                  <ShinyButton link="https://github.com/BrianAnakPintar/TARA" text="View on GitHub" />
                 </Col>
               </Row>
             </SlideInSection>
 
 
             <SlideInSection direction="right">
-  <Row className='d-flex justify-content-center align-items-center mb-5'>
-    {/* Content on the left (text and tech stack) */}
-    <Col xs={12} md={6} className='px-4 flex-column text-center text-md-start order-2 order-md-1'>
-      <h1 className="d-none d-md-block">QuizPlus</h1>
-      <p>A quiz web application designed for students to understand math solutions. Teachers can create quizzes and set the answers to be files containing their step by step solutions. Students can directly write on the canvas provided in the web-app. The grading system will generate personalised detailed feedback for the student explaining their mistakes.</p>
-      <div className='techsUsed d-flex flex-wrap justify-content-center justify-content-md-start'>
-        <TechCard techName="React" />
-        <TechCard techName="Node" />
-        <TechCard techName="Express" />
-        <TechCard techName="Javascript" />
-        <TechCard techName="MySQL" />
-        <TechCard techName="HTML/CSS" />
-        <TechCard techName="JWT" />
-        <TechCard techName="OpenAI" />
-      </div>
-      <ShinyButton link="https://github.com/your-username/quizplus" text="View on GitHub" />
-    </Col>
+              <Row className='d-flex justify-content-center align-items-center mb-5'>
+                {/* Content on the left (text and tech stack) */}
+                <Col xs={12} md={6} className='px-4 flex-column text-center text-md-start order-2 order-md-1'>
+                  <h1 className="d-none d-md-block">QuizPlus</h1>
+                  <p>A quiz web application designed for students to understand math solutions. Teachers can create quizzes and set the answers to be files containing their step by step solutions. Students can directly write on the canvas provided in the web-app. The grading system will generate personalised detailed feedback for the student explaining their mistakes.</p>
+                  <div className='techsUsed d-flex flex-wrap justify-content-center justify-content-md-start'>
+                    <TechCard techName="React" />
+                    <TechCard techName="Node" />
+                    <TechCard techName="Express" />
+                    <TechCard techName="Javascript" />
+                    <TechCard techName="MySQL" />
+                    <TechCard techName="HTML/CSS" />
+                    <TechCard techName="JWT" />
+                    <TechCard techName="OpenAI" />
+                  </div>
+                  <ShinyButton link="https://github.com/BobbySuciady/quizplus" text="View on GitHub" />
+                </Col>
 
-    {/* Image on the right */}
-    <Col xs={12} md={6} className='order-1 order-md-2'>
-      <Row className='d-flex justify-content-center align-items-center flex-column order'>
-        <h1 className="d-md-none d-sm-block text-center">QuizPlus</h1>
-        <img className="projectImgHorizontal" src={quizplus} alt="QuizPlus Project"/>
-      </Row>
-    </Col>
-  </Row>
-</SlideInSection>
+                {/* Image on the right */}
+                <Col xs={12} md={6} className='order-1 order-md-2'>
+                  <Row className='d-flex justify-content-center align-items-center flex-column order'>
+                    <h1 className="d-md-none d-sm-block text-center">QuizPlus</h1>
+                    <img className="projectImgHorizontal" src={quizplus} alt="QuizPlus Project"/>
+                  </Row>
+                </Col>
+              </Row>
+            </SlideInSection>
 
 
 
@@ -107,7 +107,7 @@ export const Projects = () => {
                     <TechCard techName="MySQL" />
                     <TechCard techName="Spotify API" />
                   </div>
-                  <ShinyButton link="" text="View on GitHub" />
+                  <ShinyButton link="https://github.com/BobbySuciady/Trackjam" text="View on GitHub" />
                 </Col>
               </Row>
             </SlideInSection>
@@ -145,7 +145,7 @@ export const Projects = () => {
                     <TechCard techName="HTML/CSS" />
                     <TechCard techName="OpenAi" />
                   </div>
-                  <ShinyButton link="https://github.com/your-username/archived-project-2" text="View on GitHub" />
+                  <ShinyButton link="https://github.com/BobbySuciady/ScuffathonGoogle" text="View on GitHub" />
                 </Col>
 
               </Row>
@@ -172,7 +172,7 @@ export const Projects = () => {
                     <TechCard techName="HTML/CSS" />
                     <TechCard techName="Gmail" />
                   </div>
-                  <ShinyButton link="https://github.com/your-username/archived-project-2" text="View on GitHub" />
+                  <ShinyButton link="https://github.com/BobbySuciady/emailsender" text="View on GitHub" />
                 </Col>
               </Row>
             </Carousel.Item>
@@ -198,7 +198,7 @@ export const Projects = () => {
                     <TechCard techName="SQLite" />
                     <TechCard techName="HTML/CSS" />
                   </div>
-                  <ShinyButton link="https://github.com/your-username/archived-project-1" text="View on GitHub" className="small-button"/>
+                  <ShinyButton link="https://github.com/BobbySuciady/eventbrite" text="View on GitHub" className="small-button"/>
                 </Col>
               </Row>
             </Carousel.Item>

@@ -82,6 +82,7 @@ nav.navbar {
 
 nav.navbar.scrolled {
   background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
 }
 
 nav.navbar .navbar-brand .logo-text {
@@ -480,10 +481,7 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
     margin: 14px auto 30px auto;
     text-align: center;
   }
-  .skillCard img {
-    width: 60%;
-    height: auto;
-  }
+
   
 }
 
