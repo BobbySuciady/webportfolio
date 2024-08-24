@@ -46,13 +46,13 @@ export const Banner = () => {
             </p>
 
             <div className="social-icon">
-              <a href="#">
+              <a href="https://www.linkedin.com/in/william-jason-suciady-a41609257">
                 <img src={navIcon1} alt="linkedin" />
               </a>
-              <a href="#">
-                <img src={navIcon2} alt="facebook" />
+              <a href="https://github.com/BobbySuciady">
+                <img src={navIcon2} alt="github" />
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/williamjasonsuciady/">
                 <img src={navIcon3} alt="instagram" />
               </a>
             </div>

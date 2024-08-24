@@ -107,7 +107,7 @@ export const Projects = () => {
                     <TechCard techName="MySQL" />
                     <TechCard techName="Spotify API" />
                   </div>
-                  <ShinyButton link="https://github.com/your-username/tara" text="View on GitHub" />
+                  <ShinyButton link="" text="View on GitHub" />
                 </Col>
               </Row>
             </SlideInSection>
