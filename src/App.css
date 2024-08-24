@@ -471,7 +471,13 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   background: linear-gradient(to left, #121212, rgba(18, 18, 18, 0));
 }
 
-
+@media (max-width: 767px) {
+  .skillCard img {
+    width: 70%;
+    height: auto;
+  }
+  
+}
 
 
 
@@ -510,7 +516,7 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
 }
 
 .projectImgHorizontal {
-  max-width: 75vh;
+  max-width: 65vh;
   height: auto;
 }
 
@@ -631,8 +637,10 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
 }
 
 @media (max-width: 767px) {
+  
   .projectImgHorizontal {
-    max-width: 60vh;
+    max-width: 40vh !important;
+    height: auto;
   }
 
   .archivedProjectImgHorizontal {
@@ -644,14 +652,25 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   }
 
   .projects p {
-    font-size: 16px; /* Smaller font size for paragraphs */
+    font-size: 15px; /* Smaller font size for paragraphs */
   }
-
-
-
+  .techCard {
+    background-color: #1f1f1f; /* A slightly lighter dark color */
+    border: 1px solid #343a40;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.8vh;
+    margin-right: 1vh;
+    width: 85px; /* Adjusted width for better readability */
+    height: 5vh; /* Fixed height */
+    color: #f8f9fa;
+  }
   .techName {
     font-size: 0.9rem !important;
   }
+
 }
 
 
