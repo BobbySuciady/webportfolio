@@ -12,7 +12,9 @@ import nodeLogo from "../assets/img/nodejs-icon-svgrepo-com.svg";
 import djangoLogo from "../assets/img/django-logo-negative.svg";
 import sqlliteLogo from "../assets/img/SQLite_Vector_logo-1024x705.png";
 import mysqlLogo from "../assets/img/MySQL-Logo.wine.png";
-import bootstraplogo from '../assets/img/Bootstrap_logo.svg.png'
+import bootstraplogo from '../assets/img/Bootstrap_logo.svg.png';
+import nextLogo from '../assets/img/nextjsLogo.png';
+import tailwindLogo from '../assets/img/Tailwind.svg';
 
 export const Skills = () => {
   const [showModal, setShowModal] = useState(false);
@@ -49,7 +51,9 @@ export const Skills = () => {
     { imgUrl: nodeLogo },
     { imgUrl: sqlliteLogo },
     { imgUrl: mysqlLogo },
-    { imgUrl: bootstraplogo}
+    { imgUrl: bootstraplogo},
+    { imgUrl: nextLogo},
+    { imgUrl: tailwindLogo},
   ];
 
   const shuffleArray = (array) => {
@@ -71,6 +75,7 @@ export const Skills = () => {
     autoplaySpeed: 0,
     cssEase: "linear",
     pauseOnHover: false,
+    
     responsive: [
       {
         breakpoint: 1024,
@@ -91,6 +96,7 @@ export const Skills = () => {
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
+          centerPadding: '10px',
         },
       },
     ],
@@ -146,7 +152,7 @@ export const Skills = () => {
         <Modal.Body>
           <ul>
             <li>Languages: Python, Javascript, C, SQL</li>
-            <li>Web and Software Development: React, Node, Express, Django, HTML, CSS</li>
+            <li>Web and Software Development: React, Next, Node, Express, Django, HTML, CSS</li>
             <li>Database Management: MySQL, SQLite</li>
             <li>Tools: Git, Bootstrap, Tailwind</li>
           </ul>

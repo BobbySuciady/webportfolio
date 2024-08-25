@@ -98,7 +98,7 @@ export const Projects = () => {
                 </Col>
                 <Col xs={12} md={6} className='px-4 flex-column text-center text-md-start'>
                   <h1 className="d-none d-md-block">TrackJam</h1>
-                  <p>This project won the "Most Innovative" award at University of Melbourne's CISSA hackathon. A web app that turns your Spotify listening habits into a fun competition. It tracks your daily music minutes, converts them into points, and lets you compete with friends on a leaderboard. Send song Quests to friends to earn points together, and stay connected by seeing their last played tracks and favorite songs.</p>
+                  <p>This project won the "Most Innovative" award 🏆 at University of Melbourne's CISSA hackathon. A web app that turns your Spotify listening habits into a fun competition. It tracks your daily music minutes, converts them into points, and lets you compete with friends on a leaderboard. Send song Quests to friends to earn points together, and stay connected by seeing their last played tracks and favorite songs.</p>
                   <div className='techsUsed d-flex flex-wrap justify-content-center justify-content-md-start'>
                     <TechCard techName="Next.js" />
                     <TechCard techName="React" />
@@ -138,7 +138,7 @@ export const Projects = () => {
 
                 <Col xs={12} md={6} className='px-4 flex-column text-center text-md-start'>
                   <h1 className="d-none d-md-block">Scuffoogle</h1>
-                  <p>This project won University of Melbourne's local hackathon held by the Computing and Information Systems Student Association for being the most annoying program. It is a search engine that insults the user based on their query.</p>
+                  <p>This project won University of Melbourne's local hackathon🏆held by the Computing and Information Systems Student Association for being the most annoying program. It is a search engine that insults the user based on their query.</p>
                   <div className='techsUsed d-flex flex-wrap justify-content-center justify-content-md-start'>
                     <TechCard techName="Python" />
                     <TechCard techName="Django" />

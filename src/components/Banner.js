@@ -45,7 +45,7 @@ export const Banner = () => {
               experience beyond that scope.
             </p>
 
-            <div className="social-icon">
+            <div className="social-icon mb-3" >
               <a href="https://www.linkedin.com/in/william-jason-suciady-a41609257">
                 <img src={navIcon1} alt="linkedin" />
               </a>
@@ -57,7 +57,7 @@ export const Banner = () => {
               </a>
             </div>
           </Col>
-          <Col xs={10} md={6} xl={5}>
+          <Col xs={10} md={6} xl={5} className="d-flex align-items-center">
             <div className="profilepicture-container">
               <img
                 className="profilepicture"
