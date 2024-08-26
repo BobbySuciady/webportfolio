@@ -428,14 +428,12 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   
 }
 
-.modal-header, .modal-foot {
-  border: none; /* Remove border */
-  background-color: #2a2a2a; /* Slightly different dark shade for header and footer */
+.modal-header, .modal-footer {
+  border: none !important; /* Remove border */
+  background-color: #2a2a2a !important; /* Slightly different dark shade for header and footer */
 }
 
-.modal-header .close {
-  color: white; /* Close button color */
-}
+
 
 .skillCard img {
   width: 100%;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Modal, Button } from "react-bootstrap";
+import { Container, Row, Col, Modal} from "react-bootstrap";
 import Slider from "react-slick";
 
 import reactLogo from "../assets/img/React_logo_logotype_emblem (1).png";
@@ -146,7 +146,8 @@ export const Skills = () => {
       <Modal show={showModal} onHide={handleClose} size="lg"
         aria-labelledby="contained-modal-title-vcenter"
         centered>
-        <Modal.Header closeButton>
+        <Modal.Header closeButton closeVariant="white">
+          
           <Modal.Title>Tech Stack</Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -158,9 +159,9 @@ export const Skills = () => {
           </ul>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          {/* <Button variant="secondary" onClick={handleClose}>
             Close
-          </Button>
+          </Button> */}
         </Modal.Footer>
       </Modal>
     </section>
