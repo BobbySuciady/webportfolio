@@ -714,6 +714,15 @@ filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rota
   text-align: center;
 }
 
+.contact .formField {
+  background-color: #fff; /* Set background color to white */
+  color: #333; /* Text color */
+  padding: 10px; /* Optional: Adjust padding */
+  border-radius: 5px;
+}
+
+
+
 .contact p {
   color: #B8B8B8;
   font-size: 18px;

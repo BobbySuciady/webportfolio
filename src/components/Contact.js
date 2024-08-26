@@ -60,6 +60,7 @@ export const ContactForm = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
+                  className='formField'
                 />
               </Form.Group>
 
@@ -71,6 +72,7 @@ export const ContactForm = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
+                  className='formField'
                 />
               </Form.Group>
             </Row>
@@ -85,6 +87,7 @@ export const ContactForm = () => {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
+                  className='formField'
                 />
               </Form.Group>
 
@@ -97,6 +100,7 @@ export const ContactForm = () => {
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
+                  className='formField'
                 />
               </Form.Group>
 

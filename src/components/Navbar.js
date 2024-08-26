@@ -20,6 +20,33 @@ export const NavBar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    const sections = document.querySelectorAll("section"); // Assuming each section has a section tag
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.3, // Adjust threshold as needed
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveLink(entry.target.id);
+        }
+      });
+    }, options);
+
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    return () => {
+      if (sections) {
+        sections.forEach((section) => observer.unobserve(section));
+      }
+    };
+  }, []);
+
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
     setFullscreen(false); // Close the fullscreen menu when a link is clicked
