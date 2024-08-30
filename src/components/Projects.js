@@ -105,7 +105,7 @@ export const Projects = () => {
                     <TechCard techName="Javascript" />
                     <TechCard techName="HTML/CSS" />
                     <TechCard techName="MySQL" />
-                    <TechCard techName="Spotify API" />
+                    <TechCard techName="SpotifyAPI" />
                   </div>
                   <ShinyButton link="https://github.com/BobbySuciady/Trackjam" text="View on GitHub" />
                 </Col>
@@ -143,7 +143,7 @@ export const Projects = () => {
                     <TechCard techName="Python" />
                     <TechCard techName="Django" />
                     <TechCard techName="HTML/CSS" />
-                    <TechCard techName="OpenAi" />
+                    <TechCard techName="OpenAI" />
                   </div>
                   <ShinyButton link="https://github.com/BobbySuciady/ScuffathonGoogle" text="View on GitHub" />
                 </Col>
@@ -170,7 +170,7 @@ export const Projects = () => {
                     <TechCard techName="Django" />
                     <TechCard techName="Python" />
                     <TechCard techName="HTML/CSS" />
-                    <TechCard techName="Gmail" />
+                    <TechCard techName="GmailAPI" />
                   </div>
                   <ShinyButton link="https://github.com/BobbySuciady/emailsender" text="View on GitHub" />
                 </Col>
