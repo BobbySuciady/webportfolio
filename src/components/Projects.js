@@ -61,7 +61,7 @@ export const Projects = () => {
                 {/* Content on the left (text and tech stack) */}
                 <Col xs={12} md={6} className='px-4 flex-column text-center text-md-start order-2 order-md-1'>
                   <h1 className="d-none d-md-block">QuizPlus</h1>
-                  <p>A quiz web application designed for students to understand math solutions. Teachers can create quizzes and set the answers to be files containing their step by step solutions. Students can directly write on the canvas provided in the web-app. The grading system will generate personalised detailed feedback for the student explaining their mistakes.</p>
+                  <p>A AI-powered quiz web application designed for students to understand math solutions. Teachers can create quizzes and set the answers to be files containing their step by step solutions. Students can directly write on the canvas provided in the web-app. The grading system will generate personalised detailed feedback for the student explaining their mistakes.</p>
                   <div className='techsUsed d-flex flex-wrap justify-content-center justify-content-md-start'>
                     <TechCard techName="React" />
                     <TechCard techName="Node" />

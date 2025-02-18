@@ -1,4 +1,4 @@
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row, Button } from "react-bootstrap";
 import profilepic from "../assets/img/Profile.jpg";
 import { useState, useEffect } from "react";
 import navIcon1 from "../assets/img/nav-icon1.svg";
@@ -6,7 +6,7 @@ import navIcon2 from "../assets/img/nav-icon2.svg";
 import navIcon3 from "../assets/img/nav-icon3.svg";
 
 export const Banner = () => {
-  const textToType = "WIlliam Jason Suciady";
+  const textToType = "William Jason Suciady";
   const speed = 100;
 
   const [typedText, setTypedText] = useState("");
@@ -24,28 +24,31 @@ export const Banner = () => {
 
     const typingTimeout = setTimeout(typeNextCharacter, speed);
 
-    // Cleanup function to clear the timeout on unmount
     return () => clearTimeout(typingTimeout);
   }, [textToType, speed]);
+
   return (
     <section className="banner" id="home">
       <Container>
         <Row className="align-items-center">
           <Col>
             <span className="tagline">Hi, my name is</span>
-
             <h1>
               <span className="wrap">{typedText}</span>
             </h1>
-
-            <p>
-              I am currently a second year student majoring in Computer Science
-              at the University of Melbourne. I am currently most proficient at
-              full stack web development but I am eager to learn and gain
-              experience beyond that scope.
+            <p style={{ marginBottom: "0px" }}>
+            I am currently a third-year Computer Science student at the University of Melbourne, passionate about software engineering to streamline workflows and enhance efficiency. I am also interested in AI/ML for automation and intelligent systems.
             </p>
 
-            <div className="social-icon mb-3" >
+            {/* ✅ Inline Style to Reduce Space */}
+            <div >
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+                <Button className="shiny-button">View Resume</Button>
+              </a>
+            </div>
+
+            {/* ✅ Ensure Social Icons Stay Close */}
+            <div className="social-icon" style={{ marginTop: "15px" }}>
               <a href="https://www.linkedin.com/in/william-jason-suciady-a41609257">
                 <img src={navIcon1} alt="linkedin" />
               </a>
