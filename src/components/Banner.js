@@ -48,7 +48,7 @@ export const Banner = () => {
             </div>
 
             {/* ✅ Ensure Social Icons Stay Close */}
-            <div className="social-icon" style={{ marginTop: "15px" }}>
+            <div className="social-icon mt-3">
               <a href="https://www.linkedin.com/in/william-jason-suciady-a41609257">
                 <img src={navIcon1} alt="linkedin" />
               </a>
