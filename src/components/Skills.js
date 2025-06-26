@@ -153,8 +153,8 @@ export const Skills = () => {
         <Modal.Body>
           <ul>
             <li>Languages: Python, Javascript, C, SQL</li>
-            <li>Web and Software Development: React, Next, Node, Express, Django, HTML, CSS</li>
-            <li>Database Management: MySQL, SQLite</li>
+            <li>Web and Software Development: React, Next, Node, Express, Django, Flask, FastAPI, HTML, CSS</li>
+            <li>Database Management: PostgreSQL, MySQL, SQLite</li>
             <li>Tools: Git, Bootstrap, Tailwind</li>
           </ul>
         </Modal.Body>
